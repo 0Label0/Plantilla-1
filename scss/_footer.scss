@@ -1,9 +1,38 @@
+$bgColorPrimary: #eafaff;
 
 footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-color: $bgColorPrimary;
+  padding: 20px;
+
   .footer-data-container {
-    
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    line-height: 25px;
+    .copyright {
+      margin-top: 12px;
+      color: #298df1;
+    }
+    div {
+      display: flex;
+      p {
+        color: $normalText;
+      }
+    }
+  }
+  .social-media-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
+
