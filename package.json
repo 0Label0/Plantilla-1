@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "express": "^4.21.0",
+    "alpinejs": "^3.14.1",
     "sass": "^1.78.0"
   },
   "devDependencies": {
     "eslint": "^9.10.0"
   },
   "scripts": {
-    "watch:scss": "sass --watch scss/index.scss:scss/css/index.css"
+    "watch:scss": "sass --watch scss/layout.scss:scss/css/layout.css"
   }
 }
