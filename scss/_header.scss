@@ -8,6 +8,10 @@ $colorTitle: #000000;
 $bgColorHoverItem: #4ca3fb;
 $bgColorPrimary: #eafaff;
 $bgColorSecundaty: #ffbcff;
+/* HEIGHT */
+$heightHeader: 60px;
+/* WIDTH */
+$movileWindow: 720px;
 
 /* HEADER */
 header {
@@ -15,30 +19,68 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: $bgColorPrimary;
-  height: 60px;
+  height: $heightHeader;
   width: 100%;
-  .title {
-    color: $colorTitle;
-    margin-right: 30px;
+  @media (max-width: $movileWindow) {
+    justify-content:space-between;
   }
-  nav {
-    ul {
-      display: flex;
-      li {
-        list-style: none;
-        height: 100%;
-        a {
-          color: $colorSecundary;
-          text-decoration: none;
-          padding: 21px;
-          transition: background .2s;
-          &:hover {
-            background-color: $bgColorHoverItem;
-            color: $colorPrimary;
-            
-          }
-        }
+  .burger-menu {
+    cursor: pointer;
+    display: none;
+    @media (max-width: $movileWindow) {
+      width: 60px;
+      height: $heightHeader;
+      display: block;
+    }
+  }
+
+  .link-container {
+    display: flex;
+    transition: transform .3s;
+    height: $heightHeader;
+    @media (max-width: $movileWindow) {
+      transform: translateY(-500px);
+      z-index: -100;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      .link {
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
     }
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorSecundary;
+      text-decoration: none;
+      transition: all .2s;
+      height: $heightHeader;
+      width: 100%;
+      padding-inline: 10px;
+      min-width: 80px;
+
+      &:hover {
+        background-color: $bgColorHoverItem;
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  .link-container-visible {
+    @extend .link-container;
+    @media (max-width: $movileWindow) {
+      position: absolute;
+      transform: translateY(60px);
+
+    }
+  }
+}
+
+.title {
+  font-size: 2.2em;
+  @media (max-width:$movileWindow) {
+    font-size: larger;
   }
 }

@@ -5,20 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plantilla-1</title>
   <link rel="stylesheet" href="../scss/css/layout.css">
+  <script src="../node_modules/alpinejs/dist/cdn.js" defer></script>
+
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="./form.html">form</a></li>
-        <li><a href="./shop.html">shop</a></li>
-        <li><a href="./contact.html">contact</a></li>
-      </ul>
-    </nav>
-    <h1 class="title">Título de la página</h1>
 
-  </header>
+    <header x-data="{ open :  false }" >
+      <img x-on:click="open = !open" class="burger-menu" src="../assets/svg/menu.svg" alt="burger menu icon">
+      <nav class="link-container" x-bind:class="{ 'link-container-visible': open }">
+        <a class="link" href="#">home</a>
+        <a class="link" href="./form.html">form</a>
+        <a class="link" href="./shop.html">shop</a>
+        <a class="link" href="./contact.html">contact</a>
+        
+      </nav>
+      <h1 class="title">Título de la página</h1>
+
+    </header>
+
+      
+    
+
 
 
 </body>
