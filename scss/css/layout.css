@@ -41,7 +41,7 @@ header .link-container, header .link-container-visible {
 }
 @media (max-width: 720px) {
   header .link-container, header .link-container-visible {
-    transform: translateY(-500px);
+    transform: translateY(-200px);
     z-index: -100;
     flex-direction: column;
     width: 100%;
@@ -58,7 +58,7 @@ header .link-container .link, header .link-container-visible .link {
   justify-content: center;
   color: #1a1919;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.2s "ease-in";
   height: 60px;
   width: 100%;
   padding-inline: 10px;
@@ -82,6 +82,12 @@ header .link-container .link:hover, header .link-container-visible .link:hover {
   .title {
     font-size: larger;
   }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=layout.css.map */

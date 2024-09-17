@@ -10,23 +10,32 @@
 </head>
 <body>
 
-    <header x-data="{ open :  false }" >
-      <img x-on:click="open = !open" class="burger-menu" src="../assets/svg/menu.svg" alt="burger menu icon">
-      <nav class="link-container" x-bind:class="{ 'link-container-visible': open }">
-        <a class="link" href="#">home</a>
-        <a class="link" href="./form.html">form</a>
-        <a class="link" href="./shop.html">shop</a>
-        <a class="link" href="./contact.html">contact</a>
-        
-      </nav>
-      <h1 class="title">Título de la página</h1>
+  <header x-data="{ open :  false }" >
 
-    </header>
+    <img x-on:click="open = !open" class="burger-menu" src="../assets/svg/menu.svg" alt="burger menu icon">
 
-      
-    
+    <nav class="link-container" x-bind:class="{ 'link-container-visible': open }">
 
+      <a class="link" href="#">home</a>
+      <a class="link" href="./form.html">form</a>
+      <a class="link" href="./shop.html">shop</a>
+      <a class="link" href="./contact.html">contact</a>
 
+    </nav>
 
+    <h1 class="title">Título de la página</h1>
+
+  </header>
+
+  <footer>
+    <div class="footer-data-container">
+      <div><p>Dirección:</p><span>Calle Ficticia 123, Madrid, España</span></div>
+      <div><p>Número telefónico</p><span>123-456-789</span></div>
+      <div><p>Correo Electrónico</p><span>info@webinventada.com</span></div>
+    </div>
+    <div class="social-media-container">
+      iconos de redes sociales
+    </div>
+  </footer>
 </body>
 </html>
