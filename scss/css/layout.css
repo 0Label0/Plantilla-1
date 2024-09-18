@@ -96,6 +96,14 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
   }
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+@media (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   footer .footer-data-container {
     font-size: 0.8em;
   }
@@ -106,6 +114,10 @@ footer {
     margin-top: 5px;
   }
 }
+=======
+>>>>>>> 5eb5e3968a6d9d920349909e2da27b839cf59c0b
+=======
+>>>>>>> 5eb5e3968a6d9d920349909e2da27b839cf59c0b
 footer .footer-data-container {
   margin-left: 10px;
   display: flex;
@@ -120,6 +132,9 @@ footer .footer-data-container .copyright {
 footer .footer-data-container div {
   display: flex;
 }
+footer .footer-data-container div p {
+  color: #212121;
+}
 footer .social-media-container {
   display: flex;
   align-items: center;
@@ -130,16 +145,18 @@ footer .social-media-container img {
   width: 50px;
   height: 50px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 @media (max-width: 720px) {
   footer .social-media-container img {
     width: 30px;
     height: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
-
-main {
-  margin-bottom: 80vh;
-}
+=======
+>>>>>>> 5eb5e3968a6d9d920349909e2da27b839cf59c0b
+=======
+>>>>>>> 5eb5e3968a6d9d920349909e2da27b839cf59c0b
 
 /*# sourceMappingURL=layout.css.map */
