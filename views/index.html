@@ -10,23 +10,42 @@
 </head>
 <body>
 
-    <header x-data="{ open :  false }" >
-      <img x-on:click="open = !open" class="burger-menu" src="../assets/svg/menu.svg" alt="burger menu icon">
-      <nav class="link-container" x-bind:class="{ 'link-container-visible': open }">
-        <a class="link" href="#">home</a>
-        <a class="link" href="./form.html">form</a>
-        <a class="link" href="./shop.html">shop</a>
-        <a class="link" href="./contact.html">contact</a>
-        
-      </nav>
-      <h1 class="title">Título de la página</h1>
+  <header x-data="{ open :  false }" >
 
-    </header>
+    <img x-on:click="open = !open" class="burger-menu" src="../assets/svg/menu.svg" alt="burger menu icon">
 
-      
-    
+    <nav class="link-container" x-bind:class="{ 'link-container-visible': open }">
 
+      <a class="link" href="#">home</a>
+      <a class="link" href="./form.html">form</a>
+      <a class="link" href="./shop.html">shop</a>
+      <a class="link" href="./contact.html">contact</a>
 
+    </nav>
 
+    <h1 class="title">Título de la página</h1>
+
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+    <div class="footer-data-container">
+      <div><p>Dirección:</p><span>Calle Ficticia 123, Madrid, España</span></div>
+      <div><p>Número telefónico</p><span>123-456-789</span></div>
+      <div><p>Correo Electrónico</p><span>info@webinventada.com</span></div>
+
+      <p class="copyright">©Todos los derechos de autor reservados</p>
+    </div>
+    <div class="social-media-container">
+      <a href="https://www.facebook.com"><img src="../assets/svg/facebook.svg" alt="facebook svg"></a>
+      <a href="https://www.instagram.com"><img src="../assets/svg/instagram.svg" alt="instagram svg"></a>
+      <a href="https://www.linkedin.com"><img src="../assets/svg/linkedin.svg" alt="linkedin svg"></a>
+      <a href="https://twitter.com"><img src="../assets/svg/twitter-x.svg" alt="twitter-x svg"></a>
+    </div>
+  </footer>
+  
 </body>
 </html>
