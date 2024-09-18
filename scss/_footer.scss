@@ -7,21 +7,32 @@ footer {
   background-color: $bgColorPrimary;
   padding: 20px;
 
+  @media (max-width:$movileWindow) {
+    flex-direction: column;
+    justify-content: flex-start;
+    .footer-data-container {
+      font-size: 0.8em;
+      div {
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        margin-top: 5px;
+      }
+    }
+  }
   .footer-data-container {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
     line-height: 25px;
+  
     .copyright {
       margin-top: 12px;
       color: #298df1;
     }
     div {
       display: flex;
-      p {
-        color: $normalText;
-      }
     }
   }
   .social-media-container {
@@ -32,6 +43,11 @@ footer {
     img {
       width: 50px;
       height: 50px;
+      @media (max-width:$movileWindow) {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+      }
     }
   }
 }
