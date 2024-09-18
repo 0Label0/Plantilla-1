@@ -1,3 +1,18 @@
+/* TEXT */
+$colorPrimary: #fffbfb;
+$colorSecundary: #1a1919;
+/* TITLE-TEXT */
+$colorSubtitle: #f63636;
+$colorTitle: #000000;
+/* BACKGROUND */
+$bgColorHoverItem: #4ca3fb;
+$bgColorPrimary: #eafaff;
+$bgColorSecundaty: #ffbcff;
+/* HEIGHT */
+$heightHeader: 60px;
+/* WIDTH */
+$movileWindow: 720px;
+
 /* HEADER */
 header {
   display: flex;
@@ -24,7 +39,7 @@ header {
     transition: transform .3s;
     height: $heightHeader;
     @media (max-width: $movileWindow) {
-      transform: translateY(-200px);
+      transform: translateY(-500px);
       z-index: -100;
       flex-direction: column;
       width: 100%;
@@ -40,7 +55,7 @@ header {
       justify-content: center;
       color: $colorSecundary;
       text-decoration: none;
-      transition: all .2s 'ease-in';
+      transition: all .2s;
       height: $heightHeader;
       width: 100%;
       padding-inline: 10px;
