@@ -41,7 +41,7 @@ header .link-container, header .link-container-visible {
 }
 @media (max-width: 720px) {
   header .link-container, header .link-container-visible {
-    transform: translateY(-200px);
+    transform: translateY(-500px);
     z-index: -100;
     flex-direction: column;
     width: 100%;
@@ -58,7 +58,7 @@ header .link-container .link, header .link-container-visible .link {
   justify-content: center;
   color: #1a1919;
   text-decoration: none;
-  transition: all 0.2s "ease-in";
+  transition: all 0.2s;
   height: 60px;
   width: 100%;
   padding-inline: 10px;
@@ -82,47 +82,6 @@ header .link-container .link:hover, header .link-container-visible .link:hover {
   .title {
     font-size: larger;
   }
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  background-color: #eafaff;
-  padding: 20px;
-}
-@media (max-width: 720px) {
-  footer {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-footer .footer-data-container {
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 2px;
-  line-height: 25px;
-}
-footer .footer-data-container .copyright {
-  margin-top: 12px;
-  color: #298df1;
-}
-footer .footer-data-container div {
-  display: flex;
-}
-footer .footer-data-container div p {
-  color: #212121;
-}
-footer .social-media-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-right: 10px;
-}
-footer .social-media-container img {
-  width: 50px;
-  height: 50px;
 }
 
 /*# sourceMappingURL=layout.css.map */
