@@ -91,6 +91,12 @@ footer {
   background-color: #eafaff;
   padding: 20px;
 }
+@media (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 footer .footer-data-container {
   margin-left: 10px;
   display: flex;
@@ -117,10 +123,6 @@ footer .social-media-container {
 footer .social-media-container img {
   width: 50px;
   height: 50px;
-}
-
-main {
-  margin-bottom: 80vh;
 }
 
 /*# sourceMappingURL=layout.css.map */

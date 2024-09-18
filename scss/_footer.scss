@@ -1,11 +1,14 @@
-$bgColorPrimary: #eafaff;
-
 footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
   background-color: $bgColorPrimary;
   padding: 20px;
+
+  @media (max-width:$movileWindow) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
   .footer-data-container {
     margin-left: 10px;
@@ -24,6 +27,7 @@ footer {
       }
     }
   }
+  
   .social-media-container {
     display: flex;
     align-items: center;
